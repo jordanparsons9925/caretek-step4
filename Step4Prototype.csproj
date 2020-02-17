@@ -46,14 +46,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="FormBookingResults.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FormBookingResults.Designer.cs">
+      <DependentUpon>FormBookingResults.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBookingWelcome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBookingWelcome.Designer.cs">
+      <DependentUpon>FormBookingWelcome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddBooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddBooking.Designer.cs">
+      <DependentUpon>FormAddBooking.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormBookingResults.resx">
+      <DependentUpon>FormBookingResults.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBookingWelcome.resx">
+      <DependentUpon>FormBookingWelcome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddBooking.resx">
+      <DependentUpon>FormAddBooking.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
