@@ -148,10 +148,10 @@ namespace Step4Prototype
         }
 
         // the methods of the Client/Proxy class
-        public void requestService(String service)
+        /*public void requestService(Service service) --Once the Service class is finished, please remove the commenting.
         {
             throw new System.NotImplementedException();
-        }
+        }*/
         public void changeService()
         {
             throw new System.NotImplementedException();
