@@ -136,7 +136,7 @@ namespace Step4Prototype
             get { return sin; }
             set
             {
-                if (value.Length <= 9)
+                if (value.Length == 9)
                     sin = value;
             }
         }
