@@ -35,7 +35,7 @@ namespace Step4Prototype
             province = "";
             postalCode = "";
             homePhone = "";
-            cellPhone = "";
+            cellPhone = null;
             SIN = "";
             dateOfBirth = null;
             region = "";
