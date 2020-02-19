@@ -5,8 +5,16 @@ using System.Text;
 
 namespace Step4Prototype
 {
-    public class PCA
+    public class PCA : User
     {
-
+        private Shift[] fullSchedule;
+        public PCA()
+        {
+            throw new System.NotImplementedException();
+        }
+        public Shift[] viewSchedule()
+        {
+            return fullSchedule;
+        }
     }
 }
