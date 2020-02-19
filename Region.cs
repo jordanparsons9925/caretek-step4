@@ -1,14 +1,14 @@
 ﻿using System;
 
-/// <summary>
-/// Summary description for Class1
-/// </summary>
-public class Class1
+namespace Step4Prototype
 {
-	public Class1()
-	{
-		//
-		// TODO: Add constructor logic here
-		//
-	}
+    static class Region
+    {
+        static string[] regions = { "East Coast", "Central", "West Coast", "NOrthern Penninsula" };
+
+        public string GetRegion(int i)
+        {
+            return regions[i];
+        }
+    }
 }
