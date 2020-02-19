@@ -18,27 +18,14 @@ namespace Step4Prototype
         private String province;
         private String postalCode;
         private String homePhone;
-        private String? cellPhone;
+        private String cellPhone;
         private String sin;
-        private DateTime? dateOfBirth;
+        private DateTime dateOfBirth;
         private String region;
 
         // the constructor of the User class
         public User()
         {
-            userName = "";
-            passWord = "";
-            firstName = "";
-            lastName = "";
-            address = "";
-            city = "";
-            province = "";
-            postalCode = "";
-            homePhone = "";
-            cellPhone = null;
-            SIN = "";
-            dateOfBirth = null;
-            region = "";
         }
 
         // the properties of the User class
