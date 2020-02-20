@@ -338,3 +338,4 @@ ASALocalRun/
 
 # BeatPulse healthcheck temp database
 healthchecksdb
+.vs/Step4Prototype/v15/Server/sqlite3/storage.ide-wal
