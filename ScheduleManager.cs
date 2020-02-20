@@ -6,7 +6,19 @@ using System.Threading.Tasks;
 
 namespace Step4Prototype
 {
-    class ScheduleManager
+    public class ScheduleManager : Employee
     {
+        public ScheduleMananger() : base()
+        {
+        }
+
+        public void createShift()
+        {
+            throw new System.NotImplementedException();
+        }
+        public void viewShcedule(Shift[] pcaSchedule)
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }
