@@ -8,7 +8,7 @@ namespace Step4Prototype
     public class PCA : User
     {
         private Shift[] fullSchedule;
-        public PCA()
+        public PCA() : base()
         {
             throw new System.NotImplementedException();
         }

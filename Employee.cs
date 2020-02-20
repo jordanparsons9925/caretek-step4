@@ -9,7 +9,7 @@ namespace Step4Prototype
     class Employee : User
     {
         private String qualifications;
-        public Employee()
+        public Employee() : base()
         {
             
         }
