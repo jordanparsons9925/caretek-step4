@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Step4Prototype
 {
-    class Employee : User
+    public class Employee : User
     {
         private String qualifications;
         public Employee() : base()

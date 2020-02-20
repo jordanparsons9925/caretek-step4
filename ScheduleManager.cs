@@ -8,7 +8,7 @@ namespace Step4Prototype
 {
     public class ScheduleManager : Employee
     {
-        public ScheduleMananger() : base()
+        public ScheduleManager() : base()
         {
         }
 
