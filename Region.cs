@@ -6,8 +6,9 @@ namespace Step4Prototype
     {
         static string[] regions = { "East Coast", "Central", "West Coast", "Northern Penninsula" };
 
-        public string GetRegion(string regionCode)
+        static public string GetRegion(string regionCode)
         {
+            string regionName = "";
             switch (regionCode)
             {
                 case "EC":

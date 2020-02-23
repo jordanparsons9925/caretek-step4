@@ -22,6 +22,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <LangVersion>7.1</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -31,6 +32,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <LangVersion>7.1</LangVersion>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -66,6 +68,12 @@
     <Compile Include="FormAddBooking.Designer.cs">
       <DependentUpon>FormAddBooking.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmSchedulePCAs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSchedulePCAs.Designer.cs">
+      <DependentUpon>frmSchedulePCAs.cs</DependentUpon>
+    </Compile>
     <Compile Include="PCA.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -82,6 +90,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormAddBooking.resx">
       <DependentUpon>FormAddBooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSchedulePCAs.resx">
+      <DependentUpon>frmSchedulePCAs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

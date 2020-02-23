@@ -28,7 +28,7 @@ namespace Step4Prototype
             }
         }
 
-        public Client client
+        public ClientProxy client
         {
             get => default;
             set
@@ -44,13 +44,13 @@ namespace Step4Prototype
             }
         }
 
-        public Service service
+        /*public Service service
         {
             get => default;
             set
             {
             }
-        }
+        }*/
 
         public string serviceDetail
         {

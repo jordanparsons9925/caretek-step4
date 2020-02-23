@@ -16,7 +16,7 @@ namespace Step4Prototype
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormBookingWelcome());
+            Application.Run(new frmSchedulePCAs());
         }
     }
 }
