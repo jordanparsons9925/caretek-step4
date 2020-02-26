@@ -5,8 +5,9 @@ namespace Step4Prototype
     static class Region
     {
         static string[] regions = { "East Coast", "Central", "West Coast", "Northern Penninsula" };
+        static string regionName;
 
-        public string GetRegion(string regionCode)
+        public static string GetRegion(string regionCode)
         {
             switch (regionCode)
             {

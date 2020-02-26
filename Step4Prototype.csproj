@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PCADB.cs" />
     <Compile Include="ClientProxy.cs" />
     <Compile Include="Employee.cs" />
     <Compile Include="FormBookingResults.cs">
@@ -73,7 +74,9 @@
     <Compile Include="ScheduleManager.cs" />
     <Compile Include="Service.cs" />
     <Compile Include="Shift.cs" />
+    <Compile Include="ShiftDB.cs" />
     <Compile Include="User.cs" />
+    <Compile Include="Validation.cs" />
     <EmbeddedResource Include="FormBookingResults.resx">
       <DependentUpon>FormBookingResults.cs</DependentUpon>
     </EmbeddedResource>
