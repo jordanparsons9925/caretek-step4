@@ -48,6 +48,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CareBaseDB.cs" />
+    <Compile Include="ClientProxyDB.cs" />
     <Compile Include="PCADB.cs" />
     <Compile Include="ClientProxy.cs" />
     <Compile Include="Employee.cs" />

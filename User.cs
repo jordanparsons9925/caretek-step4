@@ -9,19 +9,19 @@ namespace Step4Prototype
     public class User
     {
         // the fields of the User class
-        private String userName;
-        private String passWord;
-        private String firstName;
-        private String lastName;
-        private String address;
-        private String city;
-        private String province;
-        private String postalCode;
-        private String homePhone;
-        private String cellPhone;
-        private String sin;
-        private DateTime dateOfBirth;
-        private String region;
+        public String userName;
+        public String passWord;
+        public String firstName;
+        public String lastName;
+        public String address;
+        public String city;
+        public String province;
+        public String postalCode;
+        public String homePhone;
+        public String cellPhone;
+        public String sin;
+        public DateTime dateOfBirth;
+        public String region;
 
         // the constructor of the User class
         public User()

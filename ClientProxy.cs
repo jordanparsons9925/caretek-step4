@@ -9,19 +9,20 @@ namespace Step4Prototype
     public class ClientProxy : User
     {
         // the fields of the Client/Proxy class
-        private String physician;
-        private String residenceType;
-        private String payment;
-        private String proxyName;
-        private String proxyRelationship;
-        private String proxyAddress;
-        private String proxyCity;
-        private String proxyProvince;
-        private String country;
-        private String proxyHomePhone;
-        private String proxyCell;
-        private String service;
-        private String status;
+        public String physician;
+        public String residenceType;
+        public String payment;
+        public String proxyFirstName;
+        public String proxyLastName;
+        public String proxyRelationship;
+        public String proxyAddress;
+        public String proxyCity;
+        public String proxyProvince;
+        public String country;
+        public String proxyHomePhone;
+        public String proxyCell;
+        public String service;
+        public String status;
 
         // the constructor of the Client/Proxy class
         public ClientProxy() : base()
@@ -54,15 +55,6 @@ namespace Step4Prototype
             {
                 if (value.Length <= 50)
                     payment = value;
-            }
-        }
-        public String ProxyName
-        {
-            get { return proxyName; }
-            set
-            {
-                if (value.Length <= 50)
-                    proxyName = value;
             }
         }
         public String ProxyRelationship

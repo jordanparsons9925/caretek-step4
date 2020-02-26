@@ -12,11 +12,11 @@ namespace Step4Prototype
     {
         public static PCA GetPCA(string username)
         {
-            SqlConnection connection = CareBase.GetConnection();
+            SqlConnection connection = CareBaseDB.GetConnection();
             string selectStatement
-                = "SELECT Username, FirstName, FirstName, Address, City, State, PostalCode, PositionID "
+                = "SELECT Username, FirstName, FirstName, Address, City, PostalCode"
                 + "FROM Employees "
-                + "WHERE username = @username";
+                + "WHERE Username = @username";
             SqlCommand selectCommand =
                 new SqlCommand(selectStatement, connection);
             selectCommand.Parameters.AddWithValue("@username", username);
@@ -24,18 +24,17 @@ namespace Step4Prototype
             try
             {
                 connection.Open();
-                SqlDataReader PCAReader =
+                SqlDataReader pcaReader =
                     selectCommand.ExecuteReader(CommandBehavior.SingleRow);
                 if (pcaReader.Read())
                 {
                     PCA pca = new PCA();
-                    pca.username = (string)pcaReader["username"];
-                    pca.FirstName = pcaReader["FirstName"].ToString();
-                    pca.LastName = pcaReader["LastName"].ToString();
+                    pca.userName = (string)pcaReader["username"];
+                    pca.firstName = pcaReader["FirstName"].ToString();
+                    pca.lastName = pcaReader["LastName"].ToString();
                     pca.Address = pcaReader["Address"].ToString();
                     pca.City = pcaReader["City"].ToString();
-                    pca.PostalCode = pcaReader["PostalCode"].ToString();
-                    pca.PositionID = pcaReader["PositionID"].ToString();
+                    pca.postalCode = pcaReader["PostalCode"].ToString();
                     return pca;
                 }
                 else
