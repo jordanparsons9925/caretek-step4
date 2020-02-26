@@ -57,15 +57,6 @@ namespace Step4Prototype
                     payment = value;
             }
         }
-        public String ProxyName
-        {
-            get { return proxyName; }
-            set
-            {
-                if (value.Length <= 50)
-                    proxyName = value;
-            }
-        }
         public String ProxyRelationship
         {
             get { return proxyRelationship; }
