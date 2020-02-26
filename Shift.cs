@@ -36,6 +36,22 @@ namespace Step4Prototype
             }
         }
 
+        public String clientProxyUsername
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        public String pcaUsername
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
         public Employee employee
         {
             get => default;

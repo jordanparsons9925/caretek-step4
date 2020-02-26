@@ -14,9 +14,9 @@ namespace Step4Prototype
         {
             SqlConnection connection = CareBaseDB.GetConnection();
             string selectStatement
-                = "SELECT Username, FirstName, FirstName, Address, City, State, PostalCode"
+                = "SELECT Username, FirstName, FirstName, Address, City, PostalCode"
                 + "FROM Employees "
-                + "WHERE username = @username";
+                + "WHERE Username = @username";
             SqlCommand selectCommand =
                 new SqlCommand(selectStatement, connection);
             selectCommand.Parameters.AddWithValue("@username", username);
