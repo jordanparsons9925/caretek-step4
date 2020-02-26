@@ -48,6 +48,7 @@ namespace Step4Prototype
         private void label1_MouseUp(object sender, MouseEventArgs e)
         {
             dragging = false;
+            this.Controls.Remove(labelObject);
         }
     }
 }
