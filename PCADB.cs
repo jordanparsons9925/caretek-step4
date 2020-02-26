@@ -12,7 +12,7 @@ namespace Step4Prototype
     {
         public static PCA GetPCA(string username)
         {
-            SqlConnection connection = CareBase.GetConnection();
+            SqlConnection connection = CareBaseDB.GetConnection();
             string selectStatement
                 = "SELECT Username, FirstName, FirstName, Address, City, State, PostalCode, PositionID "
                 + "FROM Employees "

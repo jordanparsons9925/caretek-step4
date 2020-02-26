@@ -10,16 +10,16 @@ namespace Step4Prototype
 {
     class ShiftDB
     {
-        public static PCA GetPCA(string username)
+        public static PCA GetShift()
         {
-            SqlConnection connection = CareBase.GetConnection();
+            SqlConnection connection = CareBaseDB.GetConnection();
             string selectStatement
-                = "SELECT Username, FirstName, FirstName, Address, City, State, PostalCode, PositionID "
-                + "FROM Employees "
-                + "WHERE username = @username";
+                = "SELECT  "
+                + "FROM Shifts "
+                + "WHERE ";
             SqlCommand selectCommand =
                 new SqlCommand(selectStatement, connection);
-            selectCommand.Parameters.AddWithValue("@username", username);
+            selectCommand.Parameters.AddWithValue("@", );
 
             try
             {
@@ -28,15 +28,8 @@ namespace Step4Prototype
                     selectCommand.ExecuteReader(CommandBehavior.SingleRow);
                 if (pcaReader.Read())
                 {
-                    PCA pca = new PCA();
-                    pca.username = (string)pcaReader["username"];
-                    pca.FirstName = pcaReader["FirstName"].ToString();
-                    pca.LastName = pcaReader["LastName"].ToString();
-                    pca.Address = pcaReader["Address"].ToString();
-                    pca.City = pcaReader["City"].ToString();
-                    pca.PostalCode = pcaReader["PostalCode"].ToString();
-                    pca.PositionID = pcaReader["PositionID"].ToString();
-                    return pca;
+                    Shift shift = new Shift();
+                    //Shift stuff
                 }
                 else
                 {
