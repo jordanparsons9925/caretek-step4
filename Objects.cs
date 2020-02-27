@@ -15,11 +15,18 @@ namespace Step4Prototype
             PCA pca1 = new PCA
             {
                 userName = "abc1234",
+                passWord = ,
+                province = ,
+                homePhone = ,
+                cellPhone = ,
+                sin = ,
                 firstName = "Lori",
                 lastName = "Payne",
-                Address = "33 Broadway",
-                City = "Corner Brook",
-                postalCode = "a2h"
+                dateOfBirth = ,
+                address = "33 Broadway",
+                city = "Corner Brook",
+                postalCode = "a2h",
+                dateOfBirth = ,
             };
 
             PCA pca2 = new PCA
@@ -29,7 +36,13 @@ namespace Step4Prototype
                 lastName = "Payne",
                 Address = "20 Broadway",
                 City = "Corner Brook",
-                postalCode = "a2h"
+                postalCode = "a2h",
+                passWord = ,
+                province = ,
+                homePhone = ,
+                cellPhone = ,
+                sin = ,
+                dateOfBirth = 
             };
 
             PCA[] allPCA = { pca1, pca2 };
@@ -78,9 +91,22 @@ namespace Step4Prototype
             //Making Clients
             ClientProxy client1 = new ClientProxy
             {
+                userName = ,
+                passWord = ,
                 physician = ,
+                firstName = ,
+                lastName = ,
+                address = ,
+                city = ,
+                province = ,
+                postalCode = ,
+                homePhone= ,
                 residenceType = ,
                 payment = ,
+                cellPhone = ,
+                sin = ,
+                dateOfBirth = ,
+                region = ,
                 proxyFirstName = ,
                 proxyLastName = ,
                 proxyRelationship = ,
@@ -91,14 +117,27 @@ namespace Step4Prototype
                 proxyHomePhone = ,
                 proxyCell = ,
                 service = ,
-                status = ,
+                status = 
             };
 
             ClientProxy client2 = new ClientProxy
             {
+                userName = ,
+                passWord = ,
                 physician = ,
+                firstName = ,
+                lastName = ,
+                address = ,
+                city = ,
+                province = ,
+                postalCode = ,
+                homePhone = ,
                 residenceType = ,
                 payment = ,
+                cellPhone = ,
+                sin = ,
+                dateOfBirth = ,
+                region = ,
                 proxyFirstName = ,
                 proxyLastName = ,
                 proxyRelationship = ,
@@ -109,8 +148,9 @@ namespace Step4Prototype
                 proxyHomePhone = ,
                 proxyCell = ,
                 service = ,
-                status = ,
+                status =
             };
+
             ClientProxy[] allClients = {client1, client2};
             return allClients;
         }
