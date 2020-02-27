@@ -19,9 +19,10 @@ namespace Step4Prototype
         public String postalCode;
         public String homePhone;
         public String cellPhone;
+        public String region;
         public String sin;
         public DateTime dateOfBirth;
-        public String region;
+        public String c;
 
         // the constructor of the User class
         public User()
