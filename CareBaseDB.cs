@@ -12,7 +12,7 @@ namespace Step4Prototype
         public static SqlConnection GetConnection()
         {
             string connectionString =
-                "Data Source=./SQLEXPRESS;AttachDbFilename=C:/Users/haing/Documents/CareTek/caretek-step4/CareBase.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
+                "Data Source=JORDAN-PC\\SQLEXPRESS;AttachDbFilename=C:\\Users\\explo\\source\\repos\\CareTek Capstone\\caretek-step4\\CareBase.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
             SqlConnection connection = new SqlConnection(connectionString);
             return connection;
         }

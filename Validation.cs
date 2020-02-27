@@ -47,13 +47,16 @@ namespace Step4Prototype
         /// </summary>
         /// <param name="pca"></param>
         /// <param name="client"></param>
-        public static void validateRegion(PCA pca, ClientProxy client)
+        public static bool validateRegion(PCA pca, ClientProxy client)
         {
             if (pca.Region != client.Region)
             {
-                throw new Exception("PCA has to be in the same region as their client");
+                return false;
             }
-
+            else
+            {
+                return true;
+            }
         }
 
 

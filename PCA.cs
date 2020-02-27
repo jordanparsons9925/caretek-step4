@@ -10,7 +10,7 @@ namespace Step4Prototype
         public Shift[] fullSchedule = {};
         public PCA() : base()
         {
-            throw new System.NotImplementedException();
+            
         }
         public Shift[] viewSchedule()
         {

@@ -66,7 +66,7 @@ namespace Step4Prototype
             set
             {
             }
-        }*/
+        }
 
         public string serviceDetail
         {

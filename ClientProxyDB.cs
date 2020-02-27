@@ -14,7 +14,7 @@ namespace Step4Prototype
         {
             SqlConnection connection = CareBaseDB.GetConnection();
             string selectStatement
-                = "SELECT Username, FirstName, LastName, Address, City, PostalCode, HomePhone, CellPhone, SIN, DoB, RegionID, Physician, Payment, Status, ResidenceID, ProxyID"
+                = "SELECT Username, FirstName, LastName, Address, City, PostalCode, HomePhone, CellPhone, SIN, DoB, RegionID, Physician, Payment, Status, ResidenceID, ProxyID "
                 + "FROM Client "
                 + "WHERE Username = @username";
             SqlCommand selectCommand =
@@ -44,6 +44,54 @@ namespace Step4Prototype
                 {
                     return null;
                 }
+            }
+            catch (SqlException ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                connection.Close();
+            }
+        }
+
+        public static List<ClientProxy> getClientProxies()
+        {
+            List<ClientProxy> allClient = new List<ClientProxy>();
+            SqlConnection connection = CareBaseDB.GetConnection();
+            string selectStatement
+                = "SELECT Username, FirstName, LastName, Address, City, PostalCode, HomePhone, CellPhone, SIN, DoB, RegionID, Physician, Payment, Status, ResidenceID, ProxyID "
+                + "FROM Client";
+            SqlCommand selectCommand =
+                new SqlCommand(selectStatement, connection);
+            try
+            {
+                connection.Open();
+                SqlDataReader clientReader =
+                    selectCommand.ExecuteReader(CommandBehavior.SingleResult);
+                while (clientReader.Read())
+                {
+                    ClientProxy client = new ClientProxy();
+                    client.userName = (string)clientReader["username"];
+                    client.firstName = clientReader["FirstName"].ToString();
+                    client.lastName = clientReader["LastName"].ToString();
+                    client.Address = clientReader["Address"].ToString();
+                    client.City = clientReader["City"].ToString();
+                    client.postalCode = clientReader["PostalCode"].ToString();
+                    client.physician = (string)clientReader["Physician"];
+                    client.residenceType = clientReader["ResidenceID"].ToString();
+                    client.payment = (string)clientReader["Payment"];
+                    client.proxyFirstName = (string)clientReader["FirstName"];
+                    client.proxyLastName = (string)clientReader["LastName"];
+                    client.proxyAddress = (string)clientReader["Address"];
+                    client.proxyCity = (string)clientReader["City"];
+                    client.proxyHomePhone = (string)clientReader["HomePhone"];
+                    client.proxyCell = (string)clientReader["CellPhone"];
+                    client.status = (string)clientReader["Status"];
+                    allClient.Add(client);
+                }
+
+                return allClient;
             }
             catch (SqlException ex)
             {
