@@ -63,14 +63,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CareBaseDataSet.cs">
-      <DependentUpon>CareBaseDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="CareBaseDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CareBaseDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="CareBaseDB.cs" />
     <Compile Include="ClientProxyDB.cs" />
     <Compile Include="PCADB.cs" />
@@ -131,17 +123,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="CareBaseDataSet.xsc">
-      <DependentUpon>CareBaseDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="CareBaseDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>CareBaseDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="CareBaseDataSet.xss">
-      <DependentUpon>CareBaseDataSet.xsd</DependentUpon>
-    </None>
     <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -155,15 +136,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="CareBase.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="CareBase_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>CareBase.mdf</DependentUpon>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
